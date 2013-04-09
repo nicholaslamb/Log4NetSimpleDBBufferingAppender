@@ -48,6 +48,7 @@ namespace Logging
                         request.Item.Add(batchItem);
                     }
 
+					// Assumes Domain has already been created
                     if(!string.IsNullOrEmpty(ConfigurationManager.AppSettings["SimpleDBLogName"]))
                         request.DomainName = ConfigurationManager.AppSettings["SimpleDBLogName"];
                     else
